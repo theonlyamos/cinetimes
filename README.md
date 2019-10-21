@@ -3,10 +3,10 @@
 Netflix-like website for submission to Google Scholarship
 
 ## Install
-. Clone the repo
-. cd into the project folder
-. Run `npm install` to install modules.
-. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Clone the repo
+* cd into the project folder
+* Run `npm install` to install modules.
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
