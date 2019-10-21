@@ -1,0 +1,14 @@
+<div class="container p-0">
+    <h2 class="bg-dark text-white text-center py-4 mt-3">
+        <i class="fa fa-heart-o fa-fw text-warning"></i>Favorites
+      </h2>
+  <div class="row mb-5 px-3 mt-0">
+    <div class="col-6 col-md-3 p-0" *ngFor="let item of favIds">
+      <a href="" routerLink="/{{favItems[item].media_type}}/{{favItems[item].id}}" class="card">
+        <img src="{{favItems[item].poster_path}}" alt="" class="poster-image">
+      </a>
+      <i class="fa fa-times-circle fa-2x close-icon text-danger" (click)="removeFromFavorites(item)"
+        data-toggle="tooltip" data-placement="top" title="Remove from favorites"></i>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,96 @@
+<section class="jumbotron d-flex p-0 align-items-center justify-content-center">
+  <div class="bg-image bg-light" #bgImage></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-4 p-0">
+        <div class="poster bg-dark">
+          <img [src]="image" alt="" class="poster-image">
+          <button class="btn btn-outline-warning fav-btn border-0" (click)="addToFavorites()">
+            <i *ngIf="isFavorite" class="fa fa-heart fa-2x fav-icon text-warning"></i>
+            <i *ngIf="!isFavorite" class="fa fa-heart-o fa-2x fav-icon text-warning" data-toggle="tooltip" data-placement="top" title="Add to favorites"></i>
+          </button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-7 py-5 px-3 bg-dark details">
+        <table class="table table-striped text-white" [ngSwitch]="mediaType">
+          <tbody *ngSwitchCase="'tv'">
+            <tr>
+              <th><small><strong>Title</strong></small></th>
+              <td><small>{{poster?.name}}</small></td>
+            </tr>
+            <tr>
+                <th><small><strong>Type</strong></small></th>
+                <td><small>{{poster?.type}}</small></td>
+            </tr>
+            <tr>
+                <th><small><strong>Languages</strong></small></th>
+                <td><small>{{poster?.languages}}</small></td>
+            </tr>
+            <tr>
+                <th><small><strong>Released</strong></small></th>
+                <td><small>{{poster?.first_air_date | date }}</small></td>
+            </tr>
+            <tr>
+                <th><small><strong>Episodes</strong></small></th>
+                <td><small>{{poster?.number_of_episodes}}</small></td>
+            </tr>
+            <tr>
+                <th><small><strong>Seasons</strong></small></th>
+                <td><small>{{poster?.number_of_seasons}}</small></td>
+            </tr>
+            <tr>
+                <th><small><strong>Episode Runtime</strong></small></th>
+                <td><small>{{poster?.episode_run_time}} min</small></td>
+            </tr>
+            <tr>
+                <th><small><strong>Popularity</strong></small></th>
+                <td><small>{{poster?.popularity}}</small></td>
+            </tr>
+            <tr>
+                <th><small><strong>Overview</strong></small></th>
+                <td><small>{{poster?.overview}}</small></td>
+            </tr>
+          </tbody>
+          <tbody *ngSwitchCase="'movie'">
+              <tr>
+                <th><small><strong>Title</strong></small></th>
+                <td><small>{{poster?.title}}</small></td>
+              </tr>
+              <tr>
+                  <th><small><strong>Type</strong></small></th>
+                  <td><small>{{movieDetails?.Type}}</small></td>
+              </tr>
+              <tr>
+                  <th><small><strong>Language</strong></small></th>
+                  <td><small>{{movieDetails?.Language}}</small></td>
+              </tr>
+              <tr>
+                  <th><small><strong>Released</strong></small></th>
+                  <td><small>{{movieDetails?.Released}}</small></td>
+              </tr>
+              <tr>
+                  <th><small><strong>Runtime</strong></small></th>
+                  <td><small>{{movieDetails?.Runtime}}</small></td>
+              </tr>
+              <tr>
+                  <th><small><strong>BoxOffice</strong></small></th>
+                  <td><small>{{movieDetails?.BoxOffice}}</small></td>
+              </tr>
+              <tr>
+                  <th><small><strong>Genre</strong></small></th>
+                  <td><small>{{movieDetails?.Genre}}</small></td>
+              </tr>
+              <tr>
+                  <th><small><strong>Actors</strong></small></th>
+                  <td><small>{{movieDetails?.Actors}}</small></td>
+              </tr>
+              <tr>
+                  <th><small><strong>Plot</strong></small></th>
+                  <td><small>{{movieDetails?.Plot}}</small></td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

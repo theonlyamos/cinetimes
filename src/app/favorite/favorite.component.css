@@ -1,0 +1,23 @@
+.poster-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.close-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 2%;
+  right: 10px;
+  z-index: 999;
+}
+
+.close-icon:hover {
+  transform: scale(1.2, 1.2);
+}
+
+@media screen and (max-width: 520px){
+  .poster-image {
+    height: 300px;
+  }
+}

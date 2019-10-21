@@ -1,0 +1,37 @@
+<section class="bg-dark w-100 py-3 text-center m-0 px-3">
+  <h2 class="text-white pt-3">Popular Movies</h2>
+  <div class="container-fluid">
+    <div class="row my-5">
+      <div class="col-6 col-md-3 col-lg-2 p-1" *ngFor="let item of popularMovies">
+        <a href="" routerLink="/movie/{{item.id}}" class="card">
+          <img src="{{imageApi}}{{item.poster_path}}" alt="" class="poster-image">
+        </a>
+        <button class="btn btn-outline-warning fav-btn border-0"
+          (click)="addToFavorites(item, 'movie')">
+          <i *ngIf="isFavorite(item.id)" class="fa fa-heart fa-2x fav-icon text-warning"></i>
+          <i *ngIf="!isFavorite(item.id)" class="fa fa-heart-o fa-2x fav-icon text-warning" data-toggle="tooltip"
+            data-placement="top" title="Add to favorites"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-secondary w-100 py-3 text-center m-0 px-3">
+  <h2 class="text-white pt-3">Popular Tv Shows</h2>
+  <div class="container-fluid">
+    <div class="row my-5">
+      <div class="col-6 col-md-3 col-lg-2 p-1" *ngFor="let item of popularShows">
+        <a href="" routerLink="/tv/{{item.id}}" class="card">
+          <img src="{{imageApi}}{{item.poster_path}}" alt="" class="poster-image">
+        </a>
+        <button class="btn btn-outline-warning fav-btn border-0"
+          (click)="addToFavorites(item, 'tv')">
+          <i *ngIf="isFavorite(item.id)" class="fa fa-heart fa-2x fav-icon text-warning"></i>
+          <i *ngIf="!isFavorite(item.id)" class="fa fa-heart-o fa-2x fav-icon text-warning" data-toggle="tooltip"
+            data-placement="top" title="Add to favorites"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

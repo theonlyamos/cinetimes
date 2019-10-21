@@ -1,0 +1,44 @@
+.jumbotron {
+  border-radius: 0 !important;
+  min-height: 92vh;
+  position: relative;
+}
+
+.bg-image {
+  width: 100%;
+  height: 92vh;
+  position: absolute;
+  filter: blur(10px);
+}
+
+.details {
+  height: 80vh;
+  overflow: auto;
+}
+
+.poster {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+
+.poster-image {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.fav-btn {
+  position: absolute;
+  top: 5%;
+  right: 20px;
+  z-index: 999999;
+}
+
+.fav-btn:hover {
+  background: transparent;
+}
+
+.fav-icon:hover {
+  transform: scale(1.2, 1.2);
+}

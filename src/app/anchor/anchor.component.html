@@ -1,0 +1,36 @@
+<section class="w-100 bg-primary text-center text-white pt-3 m-0">
+  <h2>In Cinemas</h2>
+  <article class="jumbotron d-flex p-0 align-items-center justify-content-center my-0">
+    <div class="row w-100">
+      <a href="" routerLink="{{trending[0]?.media_type}}/{{trending[0]?.id}}" class="col-sm-6 col-md-4 px-0 movie">
+        <img src="{{imageApi + trending[0]?.poster_path}}" style="height: 100vh" alt="" class="poster-image">
+        <div class="poster-title text-white"><strong>{{trending[0]?.title}}</strong></div>
+      </a>
+      <div class="col-sm-6 col-md-4">
+        <a href="" routerLink="{{trending[1]?.media_type}}/{{trending[1]?.id}}" class="row movie">
+          <img src="{{imageApi + trending[1]?.poster_path}}" style="height: 50vh" alt="" class="poster-image">
+          <div class="poster-title text-white"><strong>{{trending[1]?.title}}</strong></div>
+        </a>
+        <a href="" routerLink="{{trending[2]?.media_type}}/{{trending[2]?.id}}" class="row movie">
+          <img src="{{imageApi + trending[2]?.poster_path}}" style="height: 50vh" alt="" class="poster-image">
+          <div class="poster-title text-white"><strong>{{trending[2]?.title}}</strong></div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="" routerLink="{{trending[3]?.media_type}}/{{trending[3]?.id}}" class="row movie">
+          <img src="{{imageApi + trending[3]?.poster_path}}" style="height: 33vh" alt="" class="poster-image">
+          <div class="poster-title text-white"><strong>{{trending[3]?.title}}</strong></div>
+        </a>
+        <a href="" routerLink="{{trending[4]?.media_type}}/{{trending[4]?.id}}" class="row movie">
+          <img src="{{imageApi + trending[4]?.poster_path}}" style="height: 34vh" alt="" class="poster-image">
+          <div class="poster-title text-white"><strong>{{trending[4]?.title}}</strong></div>
+        </a>
+        <a href="" routerLink="{{trending[5]?.media_type}}/{{trending[5]?.id}}" class="row movie">
+          <img src="{{imageApi + trending[5]?.poster_path}}" style="height: 33vh" alt="" class="poster-image">
+          <div class="poster-title text-white"><strong>{{trending[5]?.title}}</strong></div>
+        </a>
+      </div>
+    </div>
+  </article>
+
+</section>
