@@ -31,4 +31,8 @@ export class MovieService {
   getOmdbDetails = (id: string) => {
     return this.http.get(this.omdbApi + `&i=${id}`);
   }
+
+  search = (title: string) => {
+    return this.http.get(this.baseUrl + `search/multi?query=${title}&api_key=` + this.apiKey);
+  }
 }

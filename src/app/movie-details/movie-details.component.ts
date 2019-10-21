@@ -33,7 +33,6 @@ export class MovieDetailsComponent implements OnInit {
 
     this.movieService.getMovieDetails(this.mediaType, this.movieId).subscribe((data: any) => {
       if (data){
-        console.log(data);
         this.poster = data;
         this.image = this.imageApi + this.poster.poster_path;
 
@@ -45,7 +44,6 @@ export class MovieDetailsComponent implements OnInit {
         if (this.poster.hasOwnProperty("imdb_id")){
           this.movieService.getOmdbDetails(this.poster.imdb_id).subscribe((details: any) => {
             if (details){
-              console.log(details)
               this.movieDetails = details;
             }
           })

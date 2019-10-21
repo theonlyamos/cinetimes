@@ -15,16 +15,6 @@
   object-fit: cover;
 }
 
-.movie:hover {
-  animation: scale;
-  transition: 1s ease-in-out;
-  transform: scale(1.02,1.02);
-  z-index: 999;
-  opacity: 1;
-  box-shadow: 1px 0 5px black;
-  border-radius: 5px;
-}
-
 .poster-title {
   position: absolute;
   left: 20px;

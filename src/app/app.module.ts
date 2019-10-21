@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { MovieService } from './movie/movie.service';
 import { FavoriteService } from './favorite/favorite.service';
@@ -15,6 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { FooterComponent } from './footer/footer.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +27,15 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     MovieDetailsComponent,
     FavoriteComponent,
-    FooterComponent
+    FooterComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FormsModule
 
   ],
   providers: [MovieService, FavoriteService],
