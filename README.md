@@ -1,4 +1,5 @@
 # Cinetimes
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0915f996-fb53-42a7-aeac-cc8298759f85/deploy-status)](https://app.netlify.com/sites/cinelovers/deploys)
 
 Netflix-like website for submission to Google Scholarship
 
