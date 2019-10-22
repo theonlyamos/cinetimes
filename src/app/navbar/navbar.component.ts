@@ -34,7 +34,7 @@ export class NavbarComponent implements OnInit {
 
   clearResults = () => {
     this.searchResults = [];
-    this.resultsBar.nativeElement.style.display = "none";
+    //this.resultsBar.nativeElement.style.display = "none";
   }
 
 }
