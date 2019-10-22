@@ -8,7 +8,7 @@ export class MovieService {
   baseUrl: string = "https://api.themoviedb.org/3/";
   apiKey: string = "bbc9a3893d220424e802b3bb471cddd4";
 
-  omdbApi: string = "http://www.omdbapi.com/?apikey=4ac858fc"
+  omdbApi: string = "https://www.omdbapi.com/?apikey=4ac858fc"
 
   constructor(private http: HttpClient) { }
 
